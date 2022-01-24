@@ -1,0 +1,2692 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        D:\Programme\FME_2021_1_X64\fme.exe C:\Users\zrz-wefe\AppData\Local\Temp\wb_publish_1643031036712_8860/Besuchswerte_eine_Datei.fmw
+#          --Standort "Grub"
+#          --Betriebsnummer "091751350002 "
+#          --SourceDataset_CSV2 "D:\DigiMilch\Wiegetroege\Grub\Besuchswerte\TIM_Wt_Rinder_Besuchswerte_2022_01_23.dat"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="8808.88 1843.03"
+#!   DOC_TOP_LEFT="-7499.4 614.041"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="21635"
+#!   FME_DOCUMENT_GUID="f90a5f29-6037-4146-a739-575381f966fb"
+#!   FME_DOCUMENT_PRIORGUID="2857f5e5-71dc-4e65-84a1-14486912511c,1e2e759c-9d17-45d9-b878-f8e505113177,ef1870c1-f94f-43df-9cef-5f1746a1fdac,c88e5439-418a-4de6-890a-f333d7881e9a,08bfb39a-0e86-41cb-ba0e-afe47488e702,3ed71393-0709-406b-929a-9d1e3dca9642,b26e1e18-b93d-4681-abd0-33adc7ef8f1e,552e029b-b7e4-4cfe-8638-3a0fc92872df,9dfeea34-7cc1-4cb6-af62-ba505ea66614,568c5c68-9e75-4007-a80d-0a03f765d0f2,b2e9bcbb-ed0a-4c7d-9fe3-e9fe6c2402e6,b9a831ef-f584-4b54-a891-37446b37320d,54cda862-e293-496a-9278-e3a9add14c5e,cd51ad3c-dfd4-4f15-ad69-807f192bc64c,b43fa2e4-828c-499d-bcce-bdb9aecc7e0a,1ce3d234-a895-4508-b837-ee11af904a4a,c2fb75a7-5210-4dca-bbb7-72154b37e2b9,58694864-f5df-4c90-8d43-b110891f8424,2d5d516e-0390-465d-bdcd-5384ade0ab40,c199bf7e-c7f1-4b2f-bc25-72e557d27eee,5aa49421-ec59-4b92-82e3-df6a1ef7574d,7276ccdd-dd31-46c6-a75c-c5b8fbc9daa6,38c23f2b-5149-498b-8385-cfb3dc09bebf,65960938-3ce3-47d3-af1b-3d2948516847,c7a1807d-489b-4b79-8a38-fa384b047a9e,ceae8f72-cb8d-43db-95fc-64a70bb7e75b,22fe07de-8dfb-47af-a633-fc38d6d2f267,1fa18af2-00e8-4e63-b50e-9d93cbde88c0,c76003f2-847d-4a4c-ad44-a3cde99d51b5,1ead1ed1-de3f-4673-941a-9644f86d8735,902e969a-e1d8-40c1-98fd-5f1e9f168501,762e5582-02cb-4cde-92da-b5a089a77657,952c5a12-847c-4e31-94e5-be1d8bdc34b5,1d0ba336-4b49-4ba1-9667-6cf12dd657ee"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="windows-1252"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2021.1.3.1 (20211029 - Build 21635 - WIN64)"
+#!   LAST_SAVE_DATE="2022-01-24T14:30:36"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="38"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-8310.27 2758.52"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="81"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="CSV2"
+#!   DATASET="$(SourceDataset_CSV2)"
+#!   KEYWORD="CSV2_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="csv_line_number uint64 csv_number_of_fields uint32 csv_skipped_line string csv_total_number_of_columns uint32 csv_type string fme_basename varchar(50) fme_color varchar(50) fme_dataset varchar(50) fme_feature_type varchar(50) fme_fill_color varchar(50) fme_geometry varchar(50) fme_primary_axis string fme_rotation string fme_secondary_axis string fme_start_angle string fme_sweep_angle string fme_text_size string fme_text_string varchar(50) fme_type varchar(50) multi_reader_full_id string multi_reader_id string multi_reader_keyword varchar(50) multi_reader_type varchar(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="21635"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="csv file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_ATTR_TYPE"
+#!   VALUE="string"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="CSV File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the CSV file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the CSV file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="POSTGRES"
+#!   DATASET="$(DestDataset_POSTGRES)"
+#!   KEYWORD="POSTGRES_1"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="63"
+#!   ATTR_CASE="LOWER"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="postgres_type {FME_GEN_GEOMETRY} postgres_sql_key_columns &quot;&quot; postgres_drop_table &quot;&quot; postgres_truncate_table &quot;&quot; postgres_mode &quot;&quot; fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_COLUMNS fme_match_columns &quot;&quot; fme_where_builder_clause &quot;&quot; postgres_vacuum_analyze NO postgres_allow_serial_writing NO"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_db_operation char(8) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis float8 fme_rotation float8 fme_secondary_axis float8 fme_start_angle float8 fme_sweep_angle float8 fme_text_size float8 fme_text_string char(50) fme_type char(50) postgres_type char(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%mie_pack%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group,mie_pack%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE%Truncate&lt;space&gt;Existing,TRUNCATE_EXISTING,fme_table_creation_group Table Handling&quot; CREATE_IF_MISSING &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_selection_method Row Selection&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE RADIOPARAMETERGROUP fme_selection_method fme_match_columns,MATCH_COLUMNS%fme_where_builder_clause,BUILDER Row Selection Method&quot; MATCH_COLUMNS &quot;GUI WHOLE_LINE ATTRLIST_COMMAS fme_match_columns \&quot; \&quot; Match Columns&quot; &quot;&quot; &quot;GUI WHOLE_LINE TEXT_EDIT_SQL_CFG_OR_ATTR fme_where_builder_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_advanced_group postgres_vacuum_analyze%postgres_allow_serial_writing Advanced&quot; &quot;&quot; &quot;GUI CHOICE postgres_vacuum_analyze YES%NO Vacuum Analyze Table&quot; NO &quot;GUI CHOICE postgres_allow_serial_writing YES%NO Allow Serial Column Writing&quot; NO "
+#!   ATTR_INDEX_TYPES="BTree RTree Hash PrimaryKey"
+#!   ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="false"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="DATABASE"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="20218"
+#!   COORDSYS=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="POSTGRES_IN_FEATURES_PER_FETCH POSTGRES_IN_BEGIN_SQL POSTGRES_IN_END_SQL POSTGRES_OUT_BULK_COPY POSTGRES_OUT_TRANSACTION_INTERVAL POSTGRES_OUT_BEGIN_SQL POSTGRES_OUT_END_SQL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE_ATTRS"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING_HISTORIC"
+#!   VALUE="ALL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="Database"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Table1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_PROXY"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="PARAMS_TO_NOT_PROPAGATE_ON_INSPECT"
+#!   VALUE="BEGIN_SQL END_SQL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="SUPPORTS_SCHEMA_IN_FEATURE_TYPE_NAME"
+#!   VALUE="YES"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="real64"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="x_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="y_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="z_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="real32"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int64"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int32"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int16"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int8"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint64"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint32"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint16"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint8"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="bool"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xml"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="jsonb"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="bytea"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="bytea"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="bytea"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int2"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int2"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int2"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int4"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int4"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int8"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int8"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="numeric(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="numeric(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oid"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="serial"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float4"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="money"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float8"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="timetz"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="timestamp"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="timestamptz"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="uuid"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="bit(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varbit"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="POSTGRES"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varbit(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="POSTGRES"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_feature_table"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_map"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="postgres_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="POSTGRES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="postgres_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="POSTGRES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="postgres_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="POSTGRES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="postgres_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="POSTGRES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="postgres_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="POSTGRES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="postgres_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="POSTGRES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="postgres_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="POSTGRES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="postgres_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="POSTGRES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="postgres_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="POSTGRES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="postgres_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="POSTGRES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="postgres_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="POSTGRES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="postgres_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="POSTGRES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="postgres_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="POSTGRES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="postgres_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="POSTGRES"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="postgres_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="POSTGRES"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="besuchswerte"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER="digimilch"
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="2"
+#!   FEAT_GEOMTYPE="postgres_none"
+#!   POSITION="723.47865615724004 1354.4111827949391"
+#!   BOUNDING_RECT="723.47865615724004 1354.4111827949391 586.00106825772946 71"
+#!   ORDER="500000000000130"
+#!   COLLAPSED="false"
+#!   KEYWORD="POSTGRES_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="false"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="tier_betrieb_id" ATTR_TYPE="int2,PrimaryKey" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="standnr" ATTR_TYPE="int2" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="besuchsnr" ATTR_TYPE="int2" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="datum" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="beginn" ATTR_TYPE="time" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ende" ATTR_TYPE="time" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="verzehrsmenge" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="anfangsgewicht" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="endgewicht" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_common_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_feature_operation" PARM_VALUE="INSERT"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_match_columns" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_selection_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_selection_method" PARM_VALUE="MATCH_COLUMNS"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_table_handling" PARM_VALUE="CREATE_IF_MISSING"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_where_builder_clause" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="postgres_allow_serial_writing" PARM_VALUE="NO"/>
+#!     <DEFLINE_PARM PARM_NAME="postgres_vacuum_analyze" PARM_VALUE="NO"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="CSV"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="43"
+#!   FEAT_GEOMTYPE="csv_none"
+#!   POSITION="-7499.3962606613659 2457.0707951902245"
+#!   BOUNDING_RECT="-7499.3962606613659 2457.0707951902245 454 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="CSV2_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="col0" ATTR_TYPE="uint32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="col1" ATTR_TYPE="uint32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="col2" ATTR_TYPE="uint32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="col3" ATTR_TYPE="uint32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="col4" ATTR_TYPE="varchar(11)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="col5" ATTR_TYPE="varchar(9)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="col6" ATTR_TYPE="varchar(9)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="col7" ATTR_TYPE="time" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="col8" ATTR_TYPE="int32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="col9" ATTR_TYPE="int32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="col10" ATTR_TYPE="uint32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="col11" ATTR_TYPE="uint32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <SERVICES>
+#! <SERVICE
+#!   NAME="fmejobsubmitter"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="ADVANCED"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="FAILURE_TOPICS"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="HTTP_DATASET"
+#!   VALUE="Dateien_einlesen"
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="NOTIFICATION_WRITER"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="SUCCESS_TOPICS"
+#!   VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! </SERVICES>
+#! <REPOSITORY
+#!   NAME="DigiMilch"
+#! />
+#! <ITEM
+#!   NAME="Besuchswerte_eine_Datei.fmw"
+#! />
+#! <MODIFICATIONS>
+#! <MODIFICATION
+#!   UID=":DatasetMgr_CSV2_1:SourceDataset_CSV2_1"
+#!   VALUE="$(SourceDataset_CSV2)"
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SERVER_DEST_DIR"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_BACKUP"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_DASHBOARD"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_DATA"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_ENGINE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_LOG"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_SYSTEM"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_TEMP"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_TOPIC_MESSAGE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:SourceDataset_CSV2"
+#!   VALUE="D:\DigiMilch\Wiegetroege\Grub\Besuchswerte\TIM_Wt_Rinder_Besuchswerte_2022_01_23.dat"
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:DESTINATION_ROUTING_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:LOG_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:SOURCE_ROUTING_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID="Dateiabgleich - wiegetroege :WBParameterNode_7:DATASET"
+#!   VALUE="&lt;at&gt;Value&lt;openparen&gt;path_windows&lt;closeparen&gt;"
+#! />
+#! </MODIFICATIONS>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="Dateien_einlesen"
+#!   OVERRIDE="--FeatureReaderDataset_Dateien_einlesen"
+#!   DATASET="@Value(path_windows)"
+#! />
+#! <DATASET
+#!   NAME="CSV2_1"
+#!   OVERRIDE="-CSV2_1_DATASET"
+#!   DATASET="CSV2_1/TIM_Wt_Rinder_Besuchswerte_2022_01_23.dat"
+#! />
+#! </READER_DATASETS>
+#! <CONNECTIONS>
+#! <CONNECTION
+#!   NAME="lflgistest"
+#!   TYPE="DATABASE"
+#!   FAMILY="PostgreSQL"
+#!   USAGE="MIXED"
+#! />
+#! </CONNECTIONS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI STRING_OR_ATTR Standort Standort"
+#!   DEFAULT_VALUE="Grub"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI STRING Betriebsnummer Betriebsnummer"
+#!   DEFAULT_VALUE="091751350002 "
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_CSV2 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files|* Source CSV (Comma Separated Value) File(s):"
+#!   DEFAULT_VALUE="D:\DigiMilch\Wiegetroege\Grub\Besuchswerte\TIM_Wt_Rinder_Besuchswerte_2022_01_23.dat"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI IGNORE OPTIONAL NAMEDGROUP FME_USER_PARAM_PRIVATE_GRP DestDataset_POSTGRES Private Parameters"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI NAMED_DB_CONNECTION_ENCODED DestDataset_POSTGRES FMT:POSTGRES%FAMILY:PostgreSQL Connection"
+#!   DEFAULT_VALUE="lflgistest"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiJHcnViIiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IlN0YW5kb3J0IiwicHJvbXB0IjoiU3RhbmRvcnQiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6IjA5MTc1MTM1MDAwMiAiLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiQmV0cmllYnNudW1tZXIiLCJwcm9tcHQiOiJCZXRyaWVic251bW1lciIsInJlcXVpcmVkIjp0cnVlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IkQ6XFxEaWdpTWlsY2hcXFdpZWdldHJvZWdlXFxHcnViXFxCZXN1Y2hzd2VydGVcXFRJTV9XdF9SaW5kZXJfQmVzdWNoc3dlcnRlXzIwMjJfMDFfMjMuZGF0IiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJDU1YvQ29tcHJlc3NlZCBDU1YvVEVYVCBGaWxlcyIsImZpbHRlciI6WyIqLmNzdiIsIiouZ3oiLCIqLnR4dCJdfSx7ImRlc2NyaXB0aW9uIjoiQ1NWIEZpbGVzIiwiZmlsdGVyIjpbIiouY3N2Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIENTViBGaWxlcyIsImZpbHRlciI6WyIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9DU1YyIiwicHJvbXB0IjoiU291cmNlIENTViAoQ29tbWEgU2VwYXJhdGVkIFZhbHVlKSBGaWxlKHMpOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiaGlkZGVuIjp0cnVlLCJuYW1lIjoiRk1FX1VTRVJfUEFSQU1fUFJJVkFURV9HUlAiLCJwYXJhbWV0ZXJzIjpbeyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJkYkNvbm5lY3Rpb25zIiwiZmFtaWx5IjoiUG9zdGdyZVNRTCIsImZvcm1hdCI6IlBPU1RHUkVTIn0sImRlZmF1bHRWYWx1ZSI6ImxmbGdpc3Rlc3QiLCJuYW1lIjoiRGVzdERhdGFzZXRfUE9TVEdSRVMiLCJwcm9tcHQiOiJDb25uZWN0aW9uIiwicmVxdWlyZWQiOnRydWUsInR5cGUiOiJkcm9wZG93biIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifV0sInByb21wdCI6IlByaXZhdGUgUGFyYW1ldGVycyIsInJlcXVpcmVkIjpmYWxzZSwidHlwZSI6Imdyb3VwIiwidmFsdWVUeXBlIjoic3RyaW5nIn1dfQ=="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="Betriebsnummer" IS_STAND_ALONE="true" />
+#!     <INFO NAME="DestDataset_POSTGRES" IS_STAND_ALONE="false" />
+#!     <INFO NAME="FME_USER_PARAM_PRIVATE_GRP" IS_STAND_ALONE="false" />
+#!     <INFO NAME="SourceDataset_CSV2" IS_STAND_ALONE="false" />
+#!     <INFO NAME="Standort" IS_STAND_ALONE="true" />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="51"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Zusatzbedingung - Datum des Wiegens muss zw. Zugang und Abgang liegen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-1766.9184995813596 1758.5806411561896"
+#!   TOP_LEFT="-1766.9184995813596 1758.5806411561896"
+#!   BOTTOM_RIGHT="-933.81168184651528 1616.0795161449396"
+#!   BOUNDING_RECT="-1766.9184995813596 1758.5806411561896 833.1068177348443 142.50112501125011"
+#!   ORDER="500000000000018"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.62352941176470589,0.5725490196078431,0.8784313725490196,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="8"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="53"
+#!   NAME="1. ermittle Tier-ID über LOM"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-3487.089810818281 1888.0784236233767"
+#!   ORDER="500000000000314.25"
+#!   PALETTE_COLOR="Color3"
+#!   BOTTOM_RIGHT="-2444.1928418485913 1438.3952169233685"
+#!   BOUNDING_RECT="-3487.089810818281 1888.0784236233767 1042.8969689696894 449.68320670000816"
+#!   STICKY="true"
+#!   COLOUR="1,0.85490196078431369,0.59999999999999998,1"
+#!   CONTENTS="6 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="54"
+#!   NAME="2. Wenn LOM nicht vorliegt, dann wirds über Stallnummer versucht"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-3434.5825106775287 1298.4111827949391"
+#!   ORDER="500000000000314.25"
+#!   PALETTE_COLOR="Color5"
+#!   BOTTOM_RIGHT="-2388.560510457527 754.37045555545978"
+#!   BOUNDING_RECT="-3434.5825106775287 1298.4111827949391 1046.0220002200019 544.04072723947934"
+#!   STICKY="true"
+#!   COLOUR="0.59607843137254901,0.91764705882352937,0.72549019607843135,1"
+#!   CONTENTS="7 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="67"
+#!   NAME="fachliche Logik Datensätze mit LOM können schön in DB übertragen werden, bei den anderen wird versucht über die Stalllnummmer die Tier-ID zu ermitteln"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-5032.3300231242984 1998.0784236233767"
+#!   ORDER="500000000000314.13"
+#!   PALETTE_COLOR="Color8"
+#!   BOTTOM_RIGHT="232.8723407633106 614.04122813157983"
+#!   BOUNDING_RECT="-5032.3300231242984 1998.0784236233767 5265.202363887609 1384.0371954917969"
+#!   STICKY="true"
+#!   COLOUR="0.62352941176470589,0.5725490196078431,0.8784313725490196,1"
+#!   CONTENTS="76 7 32 53 8 48 50 5 51 6 9 31 29 4 54 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="3"
+#!   TYPE="AttributeManager"
+#!   VERSION="2"
+#!   POSITION="-5848.6071350349239 1935.7936525942378"
+#!   BOUNDING_RECT="-5848.6071350349239 1935.7936525942378 441 71"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21635"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="stallnummer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="trognummer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lfdNr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="datum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Beginnzeit" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Endezeit" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gewicht" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Beginngewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Endegewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col10" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col11" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dateiname_tag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jjjjmmtt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lom_mit_praefix" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="col0 stallnummer  RENAME_SET_VALUE col1 lom  RENAME_SET_VALUE col2 trognummer  RENAME_SET_VALUE col3 lfdNr  RENAME_SET_VALUE col4 datum  RENAME_SET_VALUE col5 Beginnzeit  RENAME_SET_VALUE col6 Endezeit  RENAME_SET_VALUE col7 gewicht  RENAME_SET_VALUE col8 Beginngewicht&lt;space&gt;Trog  RENAME_SET_VALUE col9 Endegewicht&lt;space&gt;Trog  RENAME_SET_VALUE col10 col10  NO_OP col11 col11  NO_OP dateiname_tag dateiname_tag  NO_OP betrieb_id betrieb_id  NO_OP  jjjjmmtt &lt;at&gt;Substring&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;datum&lt;closeparen&gt;&lt;comma&gt;6&lt;comma&gt;4&lt;closeparen&gt;&lt;at&gt;Substring&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;datum&lt;closeparen&gt;&lt;comma&gt;3&lt;comma&gt;2&lt;closeparen&gt;&lt;at&gt;Substring&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;datum&lt;closeparen&gt;&lt;comma&gt;0&lt;comma&gt;2&lt;closeparen&gt; SET_TO  lom_mit_praefix DE0&lt;at&gt;Value&lt;openparen&gt;lom&lt;closeparen&gt; SET_TO"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Spalten_benennen"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="4"
+#!   TYPE="AttributeRenamer"
+#!   VERSION="4"
+#!   POSITION="-1060.8556372118148 1354.4111827949391"
+#!   BOUNDING_RECT="-1060.8556372118148 1354.4111827949391 454 71"
+#!   ORDER="500000000000009"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="22236"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="standnr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="besuchsnr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="datum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="beginn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ende" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="verzehrsmenge" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="anfangsgewicht" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="endgewicht" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="stallnummer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col10" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col11" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dateiname_tag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lom_mit_praefix" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="abgang" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="tier_betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="zugang" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="trognummer standnr RENAME_SET_DEFAULT  lfdNr besuchsnr RENAME_SET_DEFAULT  jjjjmmtt datum RENAME_SET_DEFAULT  Beginnzeit beginn RENAME_SET_DEFAULT  Endezeit ende RENAME_SET_DEFAULT  gewicht verzehrsmenge RENAME_SET_DEFAULT  Beginngewicht&lt;space&gt;Trog anfangsgewicht RENAME_SET_DEFAULT  Endegewicht&lt;space&gt;Trog endgewicht RENAME_SET_DEFAULT "/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="DuplicateFilter"
+#!   VERSION="5"
+#!   POSITION="-328.70440714959341 1284.9660438991048"
+#!   BOUNDING_RECT="-328.70440714959341 1284.9660438991048 454 71"
+#!   ORDER="500000000000023"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20218"
+#! >
+#!     <OUTPUT_FEAT NAME="UNIQUE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="standnr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="besuchsnr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="datum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="beginn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ende" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="verzehrsmenge" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="anfangsgewicht" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="endgewicht" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="stallnummer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col10" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col11" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dateiname_tag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lom_mit_praefix" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="abgang" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="tier_betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="zugang" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="DUPLICATE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="standnr" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="besuchsnr" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="datum" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="beginn" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ende" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="verzehrsmenge" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="anfangsgewicht" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="endgewicht" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="stallnummer" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lom" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col10" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col11" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="dateiname_tag" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lom_mit_praefix" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="abgang" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="tier_betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="zugang" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="INPUT_ORDERED_CHOICE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="KEYATTR" PARM_VALUE="beginn datum tier_betrieb_id"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DuplicateFilter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="6"
+#!   TYPE="DatabaseJoiner"
+#!   VERSION="6"
+#!   POSITION="-3224.9704340689577 1744.436364557067"
+#!   BOUNDING_RECT="-3224.9704340689577 1744.436364557067 465.00106825772946 71"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20218"
+#! >
+#!     <OUTPUT_FEAT NAME="JOINED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="stallnummer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="trognummer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lfdNr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="datum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Beginnzeit" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Endezeit" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gewicht" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Beginngewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Endegewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col10" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col11" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dateiname_tag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jjjjmmtt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lom_mit_praefix" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="abgang" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="tier_betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="zugang" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNJOINED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="stallnummer" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lom" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="trognummer" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lfdNr" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="datum" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Beginnzeit" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Endezeit" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="gewicht" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Beginngewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Endegewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col10" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col11" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="dateiname_tag" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="jjjjmmtt" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lom_mit_praefix" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="stallnummer" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="lom" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="trognummer" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="lfdNr" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="datum" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Beginnzeit" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Endezeit" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="gewicht" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Beginngewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Endegewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="col10" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="col11" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="dateiname_tag" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="jjjjmmtt" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="lom_mit_praefix" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="ADDED_FIELDS" PARM_VALUE="abgang&lt;space&gt;tier_betrieb_id&lt;space&gt;zugang"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Joined"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Original"/>
+#!     <XFORM_PARM PARM_NAME="CACHE_SIZE" PARM_VALUE="5000"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="lflgistest"/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGRES"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:,POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;OPTIONAL NO_EDIT TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_CREATE_FEATURE_TABLES_FROM_DATA,&quot;OPTIONAL NO_EDIT TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Tables:,POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;OPTIONAL NO_EDIT TEXT&quot;,POSTGRES&lt;space&gt;"/>
+#!     <XFORM_PARM PARM_NAME="JOINED_ATTRIBUTE_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="JOINED_LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="lom_mit_praefix&lt;space&gt;lom"/>
+#!     <XFORM_PARM PARM_NAME="MATCHED_ATTR_NAME" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MATCH_MULTIPLE_DISPLAY" PARM_VALUE="Create a feature for each match"/>
+#!     <XFORM_PARM PARM_NAME="MATCH_RULE_DISPLAY" PARM_VALUE="Match All (1:M)"/>
+#!     <XFORM_PARM PARM_NAME="OPTIMIZE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_CREATE_FEATURE_TABLES_FROM_DATA" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="lflgistest"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_READ_TIME_WITH_TIMEZONE" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PREFETCH_EXHAUSTIVE" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="PREFETCH_QUERY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TABLE" PARM_VALUE="digimilch.view_tier"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRIM_KEY_FIELDS_DISPLAY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="LOM__x_Tier.LOM"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="7"
+#!   TYPE="DatabaseJoiner"
+#!   VERSION="6"
+#!   POSITION="-3222.468229534717 1086.4607509028569"
+#!   BOUNDING_RECT="-3222.468229534717 1086.4607509028569 603.90021900218971 71"
+#!   ORDER="500000000000005"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20218"
+#! >
+#!     <OUTPUT_FEAT NAME="JOINED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="stallnummer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="trognummer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lfdNr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="datum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Beginnzeit" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Endezeit" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gewicht" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Beginngewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Endegewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col10" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col11" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dateiname_tag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jjjjmmtt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lom_mit_praefix" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="abgang" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="tier_betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="zugang" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNJOINED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="stallnummer" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lom" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="trognummer" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lfdNr" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="datum" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Beginnzeit" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Endezeit" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="gewicht" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Beginngewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Endegewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col10" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col11" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="dateiname_tag" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="jjjjmmtt" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lom_mit_praefix" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="stallnummer" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="lom" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="trognummer" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="lfdNr" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="datum" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Beginnzeit" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Endezeit" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="gewicht" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Beginngewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Endegewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="col10" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="col11" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="dateiname_tag" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="jjjjmmtt" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="lom_mit_praefix" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="ADDED_FIELDS" PARM_VALUE="abgang&lt;space&gt;tier_betrieb_id&lt;space&gt;zugang"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Joined"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Original"/>
+#!     <XFORM_PARM PARM_NAME="CACHE_SIZE" PARM_VALUE="5000"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="lflgistest"/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGRES"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:,POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;OPTIONAL NO_EDIT TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;OPTIONAL NO_EDIT TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Tables:,POSTGRES_CREATE_FEATURE_TABLES_FROM_DATA,&quot;OPTIONAL NO_EDIT TEXT&quot;,POSTGRES&lt;space&gt;"/>
+#!     <XFORM_PARM PARM_NAME="JOINED_ATTRIBUTE_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="JOINED_LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="stallnummer&lt;space&gt;stallnummer&lt;space&gt;betrieb_id&lt;space&gt;betrieb_id"/>
+#!     <XFORM_PARM PARM_NAME="MATCHED_ATTR_NAME" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MATCH_MULTIPLE_DISPLAY" PARM_VALUE="Create a feature for each match"/>
+#!     <XFORM_PARM PARM_NAME="MATCH_RULE_DISPLAY" PARM_VALUE="Match All (1:M)"/>
+#!     <XFORM_PARM PARM_NAME="OPTIMIZE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_CREATE_FEATURE_TABLES_FROM_DATA" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="lflgistest"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_READ_TIME_WITH_TIMEZONE" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PREFETCH_EXHAUSTIVE" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="PREFETCH_QUERY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TABLE" PARM_VALUE="digimilch.tier_betrieb"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRIM_KEY_FIELDS_DISPLAY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="stallnr_x_Tierbetrieb.stallnr_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="8"
+#!   TYPE="Tester"
+#!   VERSION="3"
+#!   POSITION="-1766.9184995813596 1414.4111827949391"
+#!   BOUNDING_RECT="-1766.9184995813596 1414.4111827949391 430 71"
+#!   ORDER="500000000000006"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21635"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="stallnummer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="trognummer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lfdNr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="datum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Beginnzeit" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Endezeit" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gewicht" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Beginngewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Endegewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col10" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col11" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dateiname_tag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jjjjmmtt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lom_mit_praefix" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="abgang" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="tier_betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="zugang" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="stallnummer" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lom" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="trognummer" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lfdNr" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="datum" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Beginnzeit" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Endezeit" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="gewicht" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Beginngewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Endegewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col10" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col11" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="dateiname_tag" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="jjjjmmtt" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lom_mit_praefix" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="abgang" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="tier_betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="zugang" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="COMPOSITE"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="( 1 AND 2 ) OR ( 3 AND 4 ) OR  ( 5 AND 6 )"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;jjjjmmtt&lt;closeparen&gt; &gt;= &lt;at&gt;Value&lt;openparen&gt;zugang&lt;closeparen&gt;&#10;TEST &lt;at&gt;Value&lt;openparen&gt;jjjjmmtt&lt;closeparen&gt; &lt;= &lt;at&gt;Value&lt;openparen&gt;abgang&lt;closeparen&gt;&#10;TEST &lt;at&gt;Value&lt;openparen&gt;jjjjmmtt&lt;closeparen&gt; &gt;= &lt;at&gt;Value&lt;openparen&gt;zugang&lt;closeparen&gt;&#10;TEST abgang ATTRIBUTE_VALUE_NULL &quot;&quot;&#10;TEST &lt;at&gt;Value&lt;openparen&gt;jjjjmmtt&lt;closeparen&gt; &lt;= &lt;at&gt;Value&lt;openparen&gt;abgang&lt;closeparen&gt;&#10;TEST zugang ATTRIBUTE_VALUE_NULL &quot;&quot;"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="TEST"/>
+#!     <XFORM_PARM PARM_NAME="TEST_PREVIEW_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="9"
+#!   TYPE="TestFilter"
+#!   VERSION="2"
+#!   POSITION="-4944.3300231242984 1888.0784236233767"
+#!   BOUNDING_RECT="-4944.3300231242984 1888.0784236233767 1238.0010682577295 71"
+#!   ORDER="500000000000007"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21635"
+#! >
+#!     <OUTPUT_FEAT NAME="dummy&lt;space&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="stallnummer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lom" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="trognummer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lfdNr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="datum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Beginnzeit" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Endezeit" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gewicht" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Beginngewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Endegewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col10" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col11" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="dateiname_tag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jjjjmmtt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lom_mit_praefix" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;at&gt;Value&lt;openparen&gt;lom&lt;closeparen&gt;&lt;space&gt;&lt;gt&gt;&lt;space&gt;0"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="stallnummer" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lom" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="trognummer" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lfdNr" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="datum" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Beginnzeit" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Endezeit" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="gewicht" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Beginngewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Endegewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col10" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col11" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="dateiname_tag" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="jjjjmmtt" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="lom_mit_praefix" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="LOM&lt;space&gt;nicht&lt;space&gt;verf&lt;u00fc&gt;gbar"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="stallnummer" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="lom" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="trognummer" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="lfdNr" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="datum" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Beginnzeit" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Endezeit" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="gewicht" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Beginngewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Endegewicht Trog" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="col10" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="col11" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="dateiname_tag" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="jjjjmmtt" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="lom_mit_praefix" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="LOM&lt;space&gt;nicht&lt;space&gt;verf&lt;u00fc&gt;gbar"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TESTLISTGRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE="&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;lom&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;0815&quot;,dummy&lt;space&gt;,&quot;BOOL_OP,AND,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;lom&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;&lt;gt&gt;&lt;space&gt;0&quot;,&lt;at&gt;Value&lt;openparen&gt;lom&lt;closeparen&gt;&lt;space&gt;&lt;gt&gt;&lt;space&gt;0"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg_"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="68"
+#!   TYPE="SQLCreator"
+#!   VERSION="3"
+#!   POSITION="-7475.3962606613659 1897.4160758360142"
+#!   BOUNDING_RECT="-7475.3962606613659 1897.4160758360142 591.00106825772946 71"
+#!   ORDER="500000000000123"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21635"
+#! >
+#!     <OUTPUT_FEAT NAME="RESULT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="lflgistest"/>
+#!     <XFORM_PARM PARM_NAME="DB_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="betrieb_id"/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGRES"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGRES_READ_TIME_WITH_TIMEZONE,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Connection:,POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_CREATE_FEATURE_TABLES_FROM_DATA,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;,POSTGRES_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGRES&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Tables:"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_CREATE_FEATURE_TABLES_FROM_DATA" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_NAMED_CONNECTION" PARM_VALUE="lflgistest"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_READ_TIME_WITH_TIMEZONE" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGRES_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE="digimilch"/>
+#!     <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="select&lt;space&gt;betrieb_id&lt;space&gt;&lt;lf&gt;from&lt;space&gt;&lt;quote&gt;digimilch&lt;quote&gt;.&lt;quote&gt;betrieb&lt;quote&gt;&lt;lf&gt;where&lt;space&gt;betriebsnummer&lt;space&gt;=&lt;space&gt;&lt;apos&gt;$(Betriebsnummer)&lt;apos&gt;&lt;lf&gt;&lt;lf&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Ermittle_Betriebsnummer"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="35"
+#!   TYPE="FeatureMerger"
+#!   VERSION="20"
+#!   POSITION="-6591.9949789133607 2101.1415519681855"
+#!   BOUNDING_RECT="-6591.9949789133607 2101.1415519681855 483 71"
+#!   ORDER="500000000000329.25"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21635"
+#! >
+#!     <OUTPUT_FEAT NAME="MERGED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="col0" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col9" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col10" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="col11" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNMERGED_REQUESTOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="col0" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col1" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col2" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col3" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col4" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col5" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col6" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col7" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col8" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col9" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col10" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col11" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="USED_SUPPLIER"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="numReferences" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="UNUSED_SUPPLIER"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="4"/>
+#!     <XFORM_ATTR ATTR_NAME="col0" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="col1" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="col2" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="col3" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="col4" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="col5" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="col6" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="col7" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="col8" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="col9" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="col10" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="col11" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="betrieb_id" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Supplier"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Requestor"/>
+#!     <XFORM_PARM PARM_NAME="CLEANING_TOLERANCE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CONNECT_Z_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GENERATE_LIST_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="GEOM_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="IGNORE_NULLS" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_ATTRIBUTES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="1 1 AUTO"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MERGE_COUNT_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MERGE_TYPE" PARM_VALUE="Attributes Only"/>
+#!     <XFORM_PARM PARM_NAME="MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="PROCESS_DUPS" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="REJECT_NULL_MISSING_KEYS" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="SUPPLIERS_FIRST" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="SUPPLIER_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureMerger"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="37"
+#!   SOURCE_NODE="43"
+#!   TARGET_NODE="35"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 REQUESTOR"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="38"
+#!   SOURCE_NODE="68"
+#!   TARGET_NODE="35"
+#!   SOURCE_PORT_DESC="fo 0 RESULT"
+#!   TARGET_PORT_DESC="fi 1 SUPPLIER"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="30"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="29"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="34"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="fo 0 UNIQUE"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="76"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="8"
+#!   SOURCE_PORT_DESC="fo 0 JOINED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="31"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="8"
+#!   SOURCE_PORT_DESC="fo 0 JOINED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="32"
+#!   SOURCE_NODE="8"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="36"
+#!   SOURCE_NODE="35"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 0 MERGED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="48"
+#!   SOURCE_NODE="9"
+#!   TARGET_NODE="6"
+#!   SOURCE_PORT_DESC="fo 1 &lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;lom&lt;lt&gt;closeparen&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;&lt;lt&gt;gt&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;0"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="50"
+#!   SOURCE_NODE="9"
+#!   TARGET_NODE="7"
+#!   SOURCE_PORT_DESC="fo 2 LOM&lt;lt&gt;space&lt;gt&gt;nicht&lt;lt&gt;space&lt;gt&gt;verf&lt;lt&gt;u00fc&lt;gt&gt;gbar"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! <SUBDOCUMENT
+#!   NAME="Dateiabgleich - wiegetroege "
+#!   ARCGIS_COMPATIBILITY=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DOC_DYNAMIC_INPUT_ATTRS="0"
+#!   DOC_EXTENTS="4168.58 601.131"
+#!   DOC_TOP_LEFT="-2102.79 -309.815"
+#!   FME_DOCUMENT_GUID="3e7cf50a-8765-41a5-9a4f-16917ce6dd19"
+#!   FME_DOCUMENT_PRIORGUID=""
+#!   FME_NAMES_ENCODING="windows-1252"
+#!   FME_PROCESS_COUNT="NO_PARALLELISM"
+#!   FME_PROCESS_GROUPS_ORDERED="No"
+#!   FME_PROCESS_GROUP_BY=""
+#!   FME_PROCESS_PRESERVE_GROUP_ATTR="No"
+#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
+#!   GUID="3e7cf50a-8765-41a5-9a4f-16917ce6dd19"
+#!   HISTORY=""
+#!   IS_VISIBLE="false"
+#!   LAST_SAVE_BUILD="FME(R) 2020.0.1.0 (20200407 - Build 20218 - WIN64)"
+#!   LAST_SAVE_DATE="2021-11-11T09:17:05"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   PYTHON_COMPATIBILITY=""
+#!   REPLACED_BY=""
+#!   SUPPRESS_UPGRADE="false"
+#!   TITLE="Dateiabgleich - wiegetroege "
+#!   USAGE=""
+#!   USE_MARKDOWN="NO"
+#!   VIEW_POSITION="-896.884 453.13"
+#!   XFORM_DEPRECATED="No"
+#!   ZOOM_SCALE="100"
+#! >
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_EDIT_OR_NUM_OR_ATTR LETZTES_DATUM Letztes Datum:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;letztes_datum&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL STRING_OR_ATTR_ENCODED PATH_WINDOWS Path Windows:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;path_windows&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_EDIT_OR_NUM_OR_ATTR PATH_ROOTNAME Path Rootname:"
+#!   DEFAULT_VALUE="&lt;at&gt;Value&lt;openparen&gt;path_rootname&lt;closeparen&gt;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPmxldHp0ZXNfZGF0dW08Y2xvc2VwYXJlbj4iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiTEVUWlRFU19EQVRVTSIsInByb21wdCI6IkxldHp0ZXMgRGF0dW06IiwicmVxdWlyZWQiOmZhbHNlLCJzaG93QXJpdGhtZXRpY0VkaXRvciI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJleHByZXNzaW9uIiwiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nRW5jb2RlZCJ9LHsiZGVmYXVsdFZhbHVlIjoiPGF0PlZhbHVlPG9wZW5wYXJlbj5wYXRoX3dpbmRvd3M8Y2xvc2VwYXJlbj4iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiUEFUSF9XSU5ET1dTIiwicHJvbXB0IjoiUGF0aCBXaW5kb3dzOiIsInJlcXVpcmVkIjpmYWxzZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJkZWZhdWx0VmFsdWUiOiI8YXQ+VmFsdWU8b3BlbnBhcmVuPnBhdGhfcm9vdG5hbWU8Y2xvc2VwYXJlbj4iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiUEFUSF9ST09UTkFNRSIsInByb21wdCI6IlBhdGggUm9vdG5hbWU6IiwicmVxdWlyZWQiOnRydWUsInNob3dBcml0aG1ldGljRWRpdG9yIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn1dfQ=="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="LETZTES_DATUM" IS_STAND_ALONE="false" />
+#!     <INFO NAME="PATH_ROOTNAME" IS_STAND_ALONE="false" />
+#!     <INFO NAME="PATH_WINDOWS" IS_STAND_ALONE="false" />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="AttributeSplitter"
+#!   VERSION="4"
+#!   POSITION="-1355.7859299216007 291.31507890304727"
+#!   BOUNDING_RECT="-1355.7859299216007 291.31507890304727 454 71"
+#!   ORDER="500000000000030"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20218"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="letztes_datum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTR_NAME" PARM_VALUE="path_rootname"/>
+#!     <XFORM_PARM PARM_NAME="DELIMITER" PARM_VALUE="_"/>
+#!     <XFORM_PARM PARM_NAME="DROP_EMPTY_PARTS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="_list"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRIM_OPTION" PARM_VALUE="Both"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeSplitter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="6"
+#!   TYPE="TestFilter"
+#!   VERSION="2"
+#!   POSITION="270.41439406335053 122.56339138617207"
+#!   BOUNDING_RECT="270.41439406335053 122.56339138617207 431 71"
+#!   ORDER="500000000000031"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20218"
+#! >
+#!     <OUTPUT_FEAT NAME="zu&lt;space&gt;verarbeitende&lt;space&gt;Dateien"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="letztes_datum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jahr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="monat" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="tag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="letztes_datum" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_rootname" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="jahr" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="monat" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="tag" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TESTLISTGRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE="&quot;BOOL_OP,AND,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1 AND 2 AND 3&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_list&lt;lt&gt;opencurly&lt;gt&gt;4&lt;lt&gt;closecurly&lt;gt&gt;&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;&lt;gt&gt;=&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;jahr&lt;lt&gt;closeparen&lt;gt&gt;&lt;lf&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_list&lt;lt&gt;opencurly&lt;gt&gt;5&lt;lt&gt;closecurly&lt;gt&gt;&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;&lt;gt&gt;=&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;monat&lt;lt&gt;closeparen&lt;gt&gt;&lt;lf&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_list&lt;lt&gt;opencurly&lt;gt&gt;6&lt;lt&gt;closecurly&lt;gt&gt;&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;&lt;gt&gt;&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;tag&lt;lt&gt;closeparen&lt;gt&gt;&quot;,zu&lt;space&gt;verarbeitende&lt;space&gt;Dateien"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Datumvergleich"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="7"
+#!   TYPE="FeatureReader"
+#!   VERSION="11"
+#!   POSITION="914.79466961905996 122.56339138617207"
+#!   BOUNDING_RECT="914.79466961905996 122.56339138617207 441.00106825772946 71"
+#!   ORDER="500000000000121"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20218"
+#! >
+#!     <OUTPUT_FEAT NAME="&lt;SCHEMA&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="letztes_datum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jahr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="monat" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="tag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.fme_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="attribute{}.native_data_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_format_short_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_format_long_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_schema_handling" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="CSV"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="col0" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col1" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col2" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col3" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col4" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col5" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col6" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col7" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col8" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="col9" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;OTHER&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <OUTPUT_FEAT NAME="INITIATOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="letztes_datum" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="path_rootname" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="jahr" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="monat" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="tag" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="_matched_records" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="4"/>
+#!     <XFORM_ATTR ATTR_NAME="letztes_datum" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="path_rootname" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="jahr" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="monat" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="tag" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTES" PARM_VALUE="CSV,&quot;col0,col1,col2,col3,col4,col5,col6,col7,col8,col9&quot;"/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_TYPES" PARM_VALUE="CSV,&quot;uint16,uint32,uint8,buffer,buffer,buffer,uint32,uint16,uint8,uint8&quot;"/>
+#!     <XFORM_PARM PARM_NAME="ATTRS_TO_EXPOSE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Only Use Result"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="AVAILABLE_FEATURE_TYPES" PARM_VALUE="_FEATUREREADER_OPTIONAL_FTTR_%CSV"/>
+#!     <XFORM_PARM PARM_NAME="CACHE_TIMEOUT_HRS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Use Result"/>
+#!     <XFORM_PARM PARM_NAME="CONSTRAINTS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CSV2_ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CSV2_CASE_SENSITIVE_FIELD_NAMES" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="CSV2_CSV2_EXPOSE_FORMAT_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CSV2_DATASET_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CSV2_DATA_START_LINE" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="CSV2_DELIMITER" PARM_VALUE="tab"/>
+#!     <XFORM_PARM PARM_NAME="CSV2_ENCODING" PARM_VALUE="windows-1252"/>
+#!     <XFORM_PARM PARM_NAME="CSV2_ENCODING_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CSV2_ENFORCE_STRICT_SCHEMA" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="CSV2_EXPOSE_ATTRS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CSV2_FEATURE_TYPE_NAME" PARM_VALUE="FORMAT_NAME"/>
+#!     <XFORM_PARM PARM_NAME="CSV2_FIELDS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CSV2_FIELD_NAMES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CSV2_FIELD_NAMES_LINE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CSV2_FIELD_QUALIFIER_CHARACTER" PARM_VALUE="&lt;quote&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CSV2_FIELD_QUALIFIER_ESCAPE_CHARACTER" PARM_VALUE="&lt;quote&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CSV2_FIELD_SEPARATION_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CSV2_FIELD_VALUES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CSV2_PRESERVE_SOURCE_ENCODING" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="CSV2_PREVIEW_PLACEHOLDER" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CSV2_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="CSV2_READ_SKIPPED_LINES" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="CSV2_SCAN_ADDITIONAL_FIELDS" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="CSV2_SCAN_MAX_ROWS" PARM_VALUE="10000"/>
+#!     <XFORM_PARM PARM_NAME="CSV2_SCAN_TYPES" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="CSV2_SCHEMA" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CSV2_SCHEMA_GENERATION_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CSV2_SKIPPED_LINES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CSV2_SKIP_DUPLICATE_DELIMITERS" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="CSV2_TRIM_FIELD_NAME_QUALIFIERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="CSV2_TRIM_FIELD_VALUE_QUALIFIERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="CSV2_USE_CUSTOM_SCHEMA" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;path_windows&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ENABLE_CACHE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="CSV2"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_ATTRIBUTE_TYPES" PARM_VALUE="CSV,&quot;uint16,uint32,uint8,string,string,string,uint32,uint16,uint8,uint8&quot;"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_DIRECTIVES" PARM_VALUE="META_MACROS,SourceDATASET_GROUP&lt;comma&gt;&lt;comma&gt;SourceFEATURE_TYPE_NAME&lt;comma&gt;FORMAT_NAME&lt;comma&gt;SourceFIELDS_GROUP&lt;comma&gt;&lt;comma&gt;SourceDELIMITER&lt;comma&gt;tab&lt;comma&gt;SourceFIELD_NAMES_LINE&lt;comma&gt;&lt;comma&gt;SourceDATA_START_LINE&lt;comma&gt;1&lt;comma&gt;SourceADVANCED_GROUP&lt;comma&gt;&lt;comma&gt;SourceFIELD_SEPARATION_GROUP&lt;comma&gt;&lt;comma&gt;SourceSKIP_DUPLICATE_DELIMITERS&lt;comma&gt;No&lt;comma&gt;SourceFIELD_QUALIFIER_CHARACTER&lt;comma&gt;&lt;lt&gt;quote&lt;gt&gt;&lt;comma&gt;SourceFIELD_QUALIFIER_ESCAPE_CHARACTER&lt;comma&gt;&lt;lt&gt;quote&lt;gt&gt;&lt;comma&gt;SourceFIELD_NAMES_GROUP&lt;comma&gt;&lt;comma&gt;SourceTRIM_FIELD_NAME_QUALIFIERS&lt;comma&gt;Yes&lt;comma&gt;SourceCASE_SENSITIVE_FIELD_NAMES&lt;comma&gt;Yes&lt;comma&gt;SourceENFORCE_STRICT_SCHEMA&lt;comma&gt;No&lt;comma&gt;SourceFIELD_VALUES_GROUP&lt;comma&gt;&lt;comma&gt;SourceTRIM_FIELD_VALUE_QUALIFIERS&lt;comma&gt;Yes&lt;comma&gt;SourceENCODING_GROUP&lt;comma&gt;&lt;comma&gt;SourceENCODING&lt;comma&gt;windows-1252&lt;comma&gt;SourcePRESERVE_SOURCE_ENCODING&lt;comma&gt;No&lt;comma&gt;SourceSKIPPED_LINES_GROUP&lt;comma&gt;&lt;comma&gt;SourceREAD_SKIPPED_LINES&lt;comma&gt;No&lt;comma&gt;SourceSCHEMA_GENERATION_GROUP&lt;comma&gt;&lt;comma&gt;SourceSCAN_MAX_ROWS&lt;comma&gt;10000&lt;comma&gt;SourceSCAN_TYPES&lt;comma&gt;Yes&lt;comma&gt;SourceSCAN_ADDITIONAL_FIELDS&lt;comma&gt;No&lt;comma&gt;SourcePREVIEW_PLACEHOLDER&lt;comma&gt;&lt;comma&gt;SourceUSE_CUSTOM_SCHEMA&lt;comma&gt;NO&lt;comma&gt;SourceSCHEMA&lt;comma&gt;&lt;comma&gt;SourceEXPOSE_ATTRS_GROUP&lt;comma&gt;&lt;comma&gt;SourceCSV2_EXPOSE_FORMAT_ATTRS&lt;comma&gt;&lt;comma&gt;SourceQUERY_FEATURE_TYPES_FOR_MERGE_FILTERS&lt;comma&gt;Yes,METAFILE,CSV2"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="CSV2_SCHEMA,&quot;OPTIONAL GUI_LINE_TABLE NO_MOVE%NO_ADD%NO_LABEL%ROW_DELIM:;%COL_DELIM:,%STRETCH_COL:1%COL_DISPLAY_ORDER:2,0,1%&quot;&quot;Name&quot;&quot;%&quot;&quot;STRING_READONLY_ENCODED ATTRIBUTE_NAME&quot;&quot;%&quot;&quot;Type&quot;&quot;%&quot;&quot;LOOKUP_CHOICE TYPE boolean%int8%int16%int32%int64%uint8%uint16%uint32%uint64%real32%real64%string%x_coord,x_coordinate%y_coord,y_coordinate%z_coord,z_coordinate&quot;&quot;%&quot;&quot;Read&quot;&quot;%&quot;&quot;CHECKBOX READ YES%NO&quot;&quot;&quot;,CSV2&lt;space&gt;Attributes:,CSV2_CASE_SENSITIVE_FIELD_NAMES,&quot;OPTIONAL CHOICE Yes%No&quot;,CSV2&lt;space&gt;Case&lt;space&gt;Sensitive&lt;space&gt;Field&lt;space&gt;Names:,CSV2_PRESERVE_SOURCE_ENCODING,&quot;OPTIONAL CHOICE Yes%No&quot;,CSV2&lt;space&gt;Preserve&lt;space&gt;Source&lt;space&gt;Encoding:,CSV2_SCHEMA_GENERATION_GROUP,&quot;OPTIONAL DISCLOSUREGROUP FME_DISCLOSURE_CLOSED%SCAN_MAX_ROWS%SCAN_TYPES%SCAN_ADDITIONAL_FIELDS&quot;,CSV2&lt;space&gt;Schema&lt;space&gt;Generation,CSV2_ENFORCE_STRICT_SCHEMA,&quot;OPTIONAL CHOICE Yes%No&quot;,CSV2&lt;space&gt;Enforce&lt;space&gt;Strict&lt;space&gt;Schema:,CSV2_FIELD_NAMES_LINE,&quot;OPTIONAL INT_OR_CHOICE None%1%2%3%4%5&quot;,CSV2&lt;space&gt;Field&lt;space&gt;Names&lt;space&gt;Line:,CSV2_EXPOSE_ATTRS_GROUP,&quot;OPTIONAL DISCLOSUREGROUP CSV2_EXPOSE_FORMAT_ATTRS&quot;,CSV2&lt;space&gt;Schema&lt;space&gt;Attributes,CSV2_PREVIEW_PLACEHOLDER,&quot;OPTIONAL GUI_LINE_TABLE NO_LABEL%&quot;&quot;&quot;&quot;%STRING&quot;,CSV2&lt;space&gt;Preview,CSV2_SCAN_MAX_ROWS,&quot;OPTIONAL INTEGER&quot;,CSV2&lt;space&gt;Maximum&lt;space&gt;Rows&lt;space&gt;to&lt;space&gt;Scan:,CSV2_FIELD_QUALIFIER_ESCAPE_CHARACTER,&quot;OPTIONAL STRING_ENCODED&quot;,CSV2&lt;space&gt;Field&lt;space&gt;Qualifier&lt;space&gt;Escape&lt;space&gt;Character:,CSV2_FIELD_VALUES_GROUP,&quot;OPTIONAL DISCLOSUREGROUP FME_DISCLOSURE_CLOSED%TRIM_FIELD_VALUE_QUALIFIERS&quot;,CSV2&lt;space&gt;Field&lt;space&gt;Values,CSV2_DELIMITER,&quot;OPTIONAL STRING_OR_CHOICE_ENCODED auto%,%;%|%space%tab&quot;,CSV2&lt;space&gt;Delimiter&lt;space&gt;Character:,CSV2_FEATURE_TYPE_NAME,&quot;OPTIONAL LOOKUP_CHOICE From&lt;space&gt;Format&lt;space&gt;Name,FORMAT_NAME%From&lt;space&gt;File&lt;space&gt;Name&lt;openparen&gt;s&lt;closeparen&gt;,FILE_NAME&quot;,CSV2&lt;space&gt;Feature&lt;space&gt;Type&lt;space&gt;Name&lt;openparen&gt;s&lt;closeparen&gt;:,CSV2_SCAN_TYPES,&quot;OPTIONAL CHOICE Yes%No&quot;,CSV2&lt;space&gt;Scan&lt;space&gt;for&lt;space&gt;Types:,CSV2_TRIM_FIELD_VALUE_QUALIFIERS,&quot;OPTIONAL CHOICE Yes%No&quot;,CSV2&lt;space&gt;Trim&lt;space&gt;Field&lt;space&gt;Qualifier&lt;space&gt;Characters:,CSV2_SKIP_DUPLICATE_DELIMITERS,&quot;OPTIONAL CHOICE Yes%No&quot;,CSV2&lt;space&gt;Skip&lt;space&gt;Duplicate&lt;space&gt;Delimiters:,CSV2_FIELDS_GROUP,&quot;OPTIONAL DISCLOSUREGROUP FME_DISCLOSURE_OPEN%DELIMITER%FIELD_NAMES_LINE%DATA_START_LINE&quot;,CSV2&lt;space&gt;Fields,CSV2_SKIPPED_LINES_GROUP,&quot;OPTIONAL DISCLOSUREGROUP FME_DISCLOSURE_CLOSED%READ_SKIPPED_LINES&quot;,CSV2&lt;space&gt;Skipped&lt;space&gt;Lines,CSV2_FIELD_QUALIFIER_CHARACTER,&quot;OPTIONAL STRING_ENCODED&quot;,CSV2&lt;space&gt;Field&lt;space&gt;Qualifier&lt;space&gt;Character:,CSV2_ENCODING,&quot;OPTIONAL STRING_OR_ENCODING fme-system%*&quot;,CSV2&lt;space&gt;Character&lt;space&gt;Encoding:,CSV2_ADVANCED_GROUP,&quot;OPTIONAL DISCLOSUREGROUP FME_DISCLOSURE_CLOSED%FIELD_SEPARATION_GROUP%FIELD_NAMES_GROUP%FIELD_VALUES_GROUP%ENCODING_GROUP%SKIPPED_LINES_GROUP%SCHEMA_GENERATION_GROUP&quot;,CSV2&lt;space&gt;Advanced,CSV2_FIELD_SEPARATION_GROUP,&quot;OPTIONAL DISCLOSUREGROUP FME_DISCLOSURE_CLOSED%SKIP_DUPLICATE_DELIMITERS%FIELD_QUALIFIER_CHARACTER%FIELD_QUALIFIER_ESCAPE_CHARACTER&quot;,CSV2&lt;space&gt;Field&lt;space&gt;Separation,CSV2_FIELD_NAMES_GROUP,&quot;OPTIONAL DISCLOSUREGROUP FME_DISCLOSURE_CLOSED%CASE_SENSITIVE_FIELD_NAMES%ENFORCE_STRICT_SCHEMA&quot;,CSV2&lt;space&gt;Field&lt;space&gt;Names,CSV2_CSV2_EXPOSE_FORMAT_ATTRS,&quot;OPTIONAL LITERAL EXPOSED_ATTRS CSV2%Source&quot;,CSV2&lt;space&gt;Additional&lt;space&gt;Attributes&lt;space&gt;to&lt;space&gt;Expose:,CSV2_DATASET_GROUP,&quot;OPTIONAL DISCLOSUREGROUP FME_DISCLOSURE_OPEN%FEATURE_TYPE_NAME&quot;,CSV2&lt;space&gt;Dataset&lt;space&gt;Parameters,CSV2_TRIM_FIELD_NAME_QUALIFIERS,&quot;OPTIONAL NO_EDIT TEXT&quot;,CSV2&lt;space&gt;,CSV2_ENCODING_GROUP,&quot;OPTIONAL DISCLOSUREGROUP FME_DISCLOSURE_CLOSED%ENCODING%PRESERVE_SOURCE_ENCODING&quot;,CSV2&lt;space&gt;Encoding,CSV2_USE_CUSTOM_SCHEMA,&quot;OPTIONAL RADIO_GROUP 2%Automatic,NO%Manual,YES&quot;,CSV2&lt;space&gt;Attribute&lt;space&gt;Definition,CSV2_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;OPTIONAL NO_EDIT TEXT&quot;,CSV2&lt;space&gt;,CSV2_DATA_START_LINE,&quot;OPTIONAL RANGE_SLIDER 1%MAX%0&quot;,CSV2&lt;space&gt;Data&lt;space&gt;Start&lt;space&gt;Line:,CSV2_READ_SKIPPED_LINES,&quot;OPTIONAL CHOICE Yes%No&quot;,CSV2&lt;space&gt;Read&lt;space&gt;Skipped&lt;space&gt;Lines:,CSV2_SCAN_ADDITIONAL_FIELDS,&quot;OPTIONAL CHOICE Yes%No&quot;,CSV2&lt;space&gt;Scan&lt;space&gt;for&lt;space&gt;Additional&lt;space&gt;Fields:"/>
+#!     <XFORM_PARM PARM_NAME="FTTR_SEPARATOR" PARM_VALUE="SPACE"/>
+#!     <XFORM_PARM PARM_NAME="GENERIC_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="INTERACT" PARM_VALUE="&lt;No Spatial Filter&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MAX_FEATURES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MERGE_HANDLING_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUTPORTS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_DISPLAY" PARM_VALUE="Data Features"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_PORTS_MODE" PARM_VALUE="PORTS_FROM_FTTR"/>
+#!     <XFORM_PARM PARM_NAME="PORTS_FROM_FTTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="READER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="READ_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SELECTED_PORTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SINGLE_PORT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SUPPORTED_SPATIAL_INTERACTIONS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WHERE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Dateien_einlesen"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="8"
+#!   TYPE="AttributeManager"
+#!   VERSION="2"
+#!   POSITION="-1274.5351174134753 -238.81545240226575"
+#!   BOUNDING_RECT="-1274.5351174134753 -238.81545240226575 454 71"
+#!   ORDER="500000000000124"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20218"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="letztes_datum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jahr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="monat" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="tag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="letztes_datum letztes_datum  NO_OP  jahr &lt;at&gt;Substring&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;letztes_datum&lt;closeparen&gt;&lt;comma&gt;0&lt;comma&gt;4&lt;closeparen&gt; SET_TO  monat &lt;at&gt;Substring&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;letztes_datum&lt;closeparen&gt;&lt;comma&gt;4&lt;comma&gt;2&lt;closeparen&gt; SET_TO  tag &lt;at&gt;Substring&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;letztes_datum&lt;closeparen&gt;&lt;comma&gt;6&lt;comma&gt;2&lt;closeparen&gt; SET_TO path_windows path_windows  NO_OP path_rootname path_rootname  NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="9"
+#!   TYPE="FeatureMerger"
+#!   VERSION="18"
+#!   POSITION="-495.97526808031807 291.31507890304727"
+#!   BOUNDING_RECT="-495.97526808031807 291.31507890304727 483 71"
+#!   ORDER="500000000000125"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20218"
+#! >
+#!     <OUTPUT_FEAT NAME="MERGED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="letztes_datum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="path_rootname" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="jahr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="monat" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="tag" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNMERGED_REQUESTOR"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="letztes_datum" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="path_rootname" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="USED_SUPPLIER"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="letztes_datum" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="jahr" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="monat" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="tag" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="path_rootname" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="numReferences" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="UNUSED_SUPPLIER"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="letztes_datum" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="jahr" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="monat" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="tag" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="path_rootname" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="4"/>
+#!     <XFORM_ATTR ATTR_NAME="letztes_datum" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="path_windows" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="path_rootname" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="jahr" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="monat" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="tag" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Supplier"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Requestor"/>
+#!     <XFORM_PARM PARM_NAME="CLEANING_TOLERANCE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CONNECT_Z_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GENERATE_LIST_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="GEOM_TYPE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="IGNORE_NULLS" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_ATTRIBUTES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="1 1 AUTO"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MERGE_COUNT_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MERGE_TYPE" PARM_VALUE="Attributes Only"/>
+#!     <XFORM_PARM PARM_NAME="MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PROCESS_DUPS" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="REJECT_NULL_MISSING_KEYS" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="SUPPLIERS_FIRST" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="SUPPLIER_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureMerger"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <SUBDOCUMENT_IOS>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="2"
+#!   NAME="AttributeSplitter_Input"
+#!   POSITION="-2102.7869981793301 272.81507890304727"
+#!   BOUNDING_RECT="-2102.7869981793301 272.81507890304727 571.00106825772946 71"
+#!   COLLAPSED="true"
+#!   PUBLISHED="true"
+#!   IS_SOURCE="true"
+#!   ATTR_MODE="0"
+#! >
+#!     <XFORM_ATTR ATTR_NAME="letztes_datum" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(LETZTES_DATUM)" />
+#!     <XFORM_ATTR ATTR_NAME="path_windows" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(PATH_WINDOWS)" />
+#!     <XFORM_ATTR ATTR_NAME="path_rootname" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(PATH_ROOTNAME)" />
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="3"
+#!   NAME="AttributeManager_2_Input"
+#!   POSITION="-2094.5361856712047 -238.81545240226575"
+#!   BOUNDING_RECT="-2094.5361856712047 -238.81545240226575 644.00106825772946 71"
+#!   COLLAPSED="true"
+#!   PUBLISHED="true"
+#!   IS_SOURCE="true"
+#!   ATTR_MODE="0"
+#! >
+#!     <XFORM_ATTR ATTR_NAME="letztes_datum" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(LETZTES_DATUM)" />
+#!     <XFORM_ATTR ATTR_NAME="path_windows" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(PATH_WINDOWS)" />
+#!     <XFORM_ATTR ATTR_NAME="path_rootname" ATTR_TYPE="varchar(200)" ATTR_VALUE="$(PATH_ROOTNAME)" />
+#! </SUBDOCUMENT_IO>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="4"
+#!   NAME="Dateien_einlesen_CSV"
+#!   POSITION="1493.7957378767894 122.56339138617207"
+#!   BOUNDING_RECT="1493.7957378767894 122.56339138617207 572.00106825772946 71"
+#!   COLLAPSED="true"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! </SUBDOCUMENT_IOS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="10"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="0"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="11"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="8"
+#!   SOURCE_PORT_DESC="0"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 REQUESTOR"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="13"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="7"
+#!   SOURCE_PORT_DESC="fo 0 zu&lt;lt&gt;space&lt;gt&gt;verarbeitende&lt;lt&gt;space&lt;gt&gt;Dateien"
+#!   TARGET_PORT_DESC="fi 0 INITIATOR"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="14"
+#!   SOURCE_NODE="8"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 1 SUPPLIER"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="15"
+#!   SOURCE_NODE="9"
+#!   TARGET_NODE="6"
+#!   SOURCE_PORT_DESC="fo 0 MERGED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="16"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="fo 1 CSV"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! </SUBDOCUMENT>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 38
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_CSV2_1,CSV2_IN_FIELDS_GROUP_CSV2_1,CSV2_IN_DELIMITER_CSV2_1,CSV2_IN_FIELD_NAMES_LINE_CSV2_1,CSV2_IN_DATA_START_LINE_CSV2_1,CSV2_IN_ADVANCED_GROUP_CSV2_1,CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_1,CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1,CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1,CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1,CSV2_IN_FIELD_NAMES_GROUP_CSV2_1,CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1,CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1,CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_1,CSV2_IN_FIELD_VALUES_GROUP_CSV2_1,CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_1,CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1,CSV2_IN_ENCODING_GROUP_CSV2_1,CSV2_IN_ENCODING_CSV2_1,CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1,CSV2_IN_SKIPPED_LINES_GROUP_CSV2_1,CSV2_IN_READ_SKIPPED_LINES_CSV2_1,CSV2_IN_NETWORK_AUTHENTICATION_CSV2_1,DestDataset_POSTGRES_1,POSTGRES_OUT_FME_CONNECTION_GROUP_POSTGRES_1,POSTGRES_OUT_ADVANCED_POSTGRES_1,POSTGRES_OUT_BULK_COPY_POSTGRES_1,POSTGRES_OUT_START_TRANSACTION_POSTGRES_1,POSTGRES_OUT_TRANSACTION_INTERVAL_POSTGRES_1,POSTGRES_OUT_BEGIN_SQL_POSTGRES_1,POSTGRES_OUT_END_SQL_POSTGRES_1
+# ============================================================================
+DEFAULT_MACRO Standort Grub
+DEFAULT_MACRO Betriebsnummer 091751350002 
+DEFAULT_MACRO SourceDataset_CSV2 D:\DigiMilch\Wiegetroege\Grub\Besuchswerte\TIM_Wt_Rinder_Besuchswerte_2022_01_23.dat
+DEFAULT_MACRO FME_USER_PARAM_PRIVATE_GRP 
+DEFAULT_MACRO DestDataset_POSTGRES lflgistest
+# ============================================================================
+GUI STRING Standort Standort
+GUI STRING Betriebsnummer Betriebsnummer
+GUI MULTIFILE SourceDataset_CSV2 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files|* Source CSV (Comma Separated Value) File(s):
+GUI NAMED_DB_CONNECTION_ENCODED DestDataset_POSTGRES FMT:POSTGRES%FAMILY:PostgreSQL Connection
+# ============================================================================
+USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJkZWZhdWx0VmFsdWUiOiJHcnViIiwiZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IlN0YW5kb3J0IiwicHJvbXB0IjoiU3RhbmRvcnQiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImV4cHJlc3Npb24iLCJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImRlZmF1bHRWYWx1ZSI6IjA5MTc1MTM1MDAwMiAiLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiQmV0cmllYnNudW1tZXIiLCJwcm9tcHQiOiJCZXRyaWVic251bW1lciIsInJlcXVpcmVkIjp0cnVlLCJzaG93RWRpdEJ1dHRvbiI6ZmFsc2UsInR5cGUiOiJ0ZXh0IiwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IkQ6XFxEaWdpTWlsY2hcXFdpZWdldHJvZWdlXFxHcnViXFxCZXN1Y2hzd2VydGVcXFRJTV9XdF9SaW5kZXJfQmVzdWNoc3dlcnRlXzIwMjJfMDFfMjMuZGF0IiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJDU1YvQ29tcHJlc3NlZCBDU1YvVEVYVCBGaWxlcyIsImZpbHRlciI6WyIqLmNzdiIsIiouZ3oiLCIqLnR4dCJdfSx7ImRlc2NyaXB0aW9uIjoiQ1NWIEZpbGVzIiwiZmlsdGVyIjpbIiouY3N2Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIENTViBGaWxlcyIsImZpbHRlciI6WyIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9DU1YyIiwicHJvbXB0IjoiU291cmNlIENTViAoQ29tbWEgU2VwYXJhdGVkIFZhbHVlKSBGaWxlKHMpOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiaGlkZGVuIjp0cnVlLCJuYW1lIjoiRk1FX1VTRVJfUEFSQU1fUFJJVkFURV9HUlAiLCJwYXJhbWV0ZXJzIjpbeyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJkYkNvbm5lY3Rpb25zIiwiZmFtaWx5IjoiUG9zdGdyZVNRTCIsImZvcm1hdCI6IlBPU1RHUkVTIn0sImRlZmF1bHRWYWx1ZSI6ImxmbGdpc3Rlc3QiLCJuYW1lIjoiRGVzdERhdGFzZXRfUE9TVEdSRVMiLCJwcm9tcHQiOiJDb25uZWN0aW9uIiwicmVxdWlyZWQiOnRydWUsInR5cGUiOiJkcm9wZG93biIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWQifV0sInByb21wdCI6IlByaXZhdGUgUGFyYW1ldGVycyIsInJlcXVpcmVkIjpmYWxzZSwidHlwZSI6Imdyb3VwIiwidmFsdWVUeXBlIjoic3RyaW5nIn1dfQ==
+# ============================================================================
+INCLUDE [ if {{$(Standort)} == {}} { puts_real {Parameter 'Standort' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(Betriebsnummer)} == {}} { puts_real {Parameter 'Betriebsnummer' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_CSV2)} == {}} { puts_real {Parameter 'SourceDataset_CSV2' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} CSV2
+MULTI_READER_KEYWORD{0} CSV2_1
+MULTI_READER_GEN_DIRECTIVES{0} READ_SKIPPED_LINES,No,FIELD_SEPARATION_GROUP,,READ_EMPTY_VALUES_AS,Null,TYPE_ATTRIBUTE_HANDLING,STANDARD_TYPES,SCAN_TYPES,Yes,_MERGE_SCHEMAS,YES,FIELD_QUALIFIER_ESCAPE_CHARACTER,<lt>quote<gt>,ENCODING_GROUP,,FIELD_NAMES_LINE,,USE_CUSTOM_SCHEMA,NO,DATE_INPUT_FORMAT,FME,SCAN_MAX_ROWS,10000,SCAN_ADDITIONAL_FIELDS,No,TRIM_FEATURE_TYPE_NAME,Yes,SCHEMA,,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,FEATURE_TYPE_NAME,FORMAT_NAME,ADVANCED_GROUP,,SKIPPED_LINES_GROUP,,FIELDS_GROUP,,SKIP_DUPLICATE_DELIMITERS,No,CSV2_EXPOSE_FORMAT_ATTRS,,FIELD_VALUES_GROUP,,DATASET_GROUP,,ENFORCE_STRICT_SCHEMA,No,SCHEMA_GENERATION_GROUP,,PRESERVE_SOURCE_ENCODING,No,PREVIEW_PLACEHOLDER,,TRIM_FIELD_VALUE_QUALIFIERS,Yes,SUPPORTED_READER_ARCHIVE_EXTENSIONS,csv.gz<comma>txt.gz,ENCODING,windows-1252,DELIMITER,tab,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_CLOSED,FIELD_QUALIFIER_CHARACTER,<lt>quote<gt>,FIELD_NAMES_GROUP,,STRING_TYPE_ATTRIBUTE_HANDLING,EXPLICIT_WIDTH,TRIM_FIELD_NAME_QUALIFIERS,Yes,REPLACE_ATTR_NAME_INVALID_CHARS,Yes,CHUNK_SIZE,100000,DATA_START_LINE,1,CASE_SENSITIVE_FIELD_NAMES,Yes,TRIM_FIELD_NAME_WHITESPACE,Yes
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} NULL
+MULTI_WRITER_KEYWORD{0} POSTGRES_1
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV2_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV2 CSV2_1
+# =====================================================================
+# The following GUI line prompts for a file to be used as the source CSV file.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_CSV2_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV2 CSV2_1
+DEFAULT_MACRO SourceDataset_CSV2_1 $(SourceDataset_CSV2)
+GUI MULTIFILE SourceDataset_CSV2_1 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|* Source CSV (Comma Separated Value) File(s):
+DEFAULT_MACRO CSV2_IN_TRIM_FEATURE_TYPE_NAME_CSV2_1 Yes
+CSV2_1_TRIM_FEATURE_TYPE_NAME "$(CSV2_IN_TRIM_FEATURE_TYPE_NAME_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_REPLACE_ATTR_NAME_INVALID_CHARS_CSV2_1 Yes
+CSV2_1_REPLACE_ATTR_NAME_INVALID_CHARS "$(CSV2_IN_REPLACE_ATTR_NAME_INVALID_CHARS_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_SUPPORTED_READER_ARCHIVE_EXTENSIONS_CSV2_1 csv.gz,txt.gz
+CSV2_1_SUPPORTED_READER_ARCHIVE_EXTENSIONS "$(CSV2_IN_SUPPORTED_READER_ARCHIVE_EXTENSIONS_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_FEATURE_TYPE_NAME_CSV2_1 FORMAT_NAME
+CSV2_1_FEATURE_TYPE_NAME "$(CSV2_IN_FEATURE_TYPE_NAME_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_FIELDS_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELDS_GROUP_CSV2_1 CSV2_IN_DELIMITER_CSV2_1%CSV2_IN_FIELD_NAMES_LINE_CSV2_1%CSV2_IN_DATA_START_LINE_CSV2_1 Fields
+DEFAULT_MACRO CSV2_IN_DELIMITER_CSV2_1 tab
+CSV2_1_DELIMITER "$(CSV2_IN_DELIMITER_CSV2_1)"
+GUI STRING_OR_CHOICE_ENCODED CSV2_IN_DELIMITER_CSV2_1 auto%,%;%|%space%tab Delimiter Character:
+DEFAULT_MACRO CSV2_IN_FIELD_NAMES_LINE_CSV2_1 
+CSV2_1_FIELD_NAMES_LINE "$(CSV2_IN_FIELD_NAMES_LINE_CSV2_1)"
+GUI OPTIONAL INT_OR_CHOICE CSV2_IN_FIELD_NAMES_LINE_CSV2_1 None%1%2%3%4%5 Field Names Line:
+GUI LOOKUP CSV2_IN_FIELD_NAMES_LINE_CSV2_1 None, 
+DEFAULT_MACRO CSV2_IN_DATA_START_LINE_CSV2_1 1
+CSV2_1_DATA_START_LINE "$(CSV2_IN_DATA_START_LINE_CSV2_1)"
+GUI RANGE_SLIDER CSV2_IN_DATA_START_LINE_CSV2_1 1%MAX%0 Data Start Line:
+DEFAULT_MACRO CSV2_IN_ADVANCED_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_ADVANCED_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_1%CSV2_IN_FIELD_NAMES_GROUP_CSV2_1%CSV2_IN_FIELD_VALUES_GROUP_CSV2_1%CSV2_IN_ENCODING_GROUP_CSV2_1%CSV2_IN_SKIPPED_LINES_GROUP_CSV2_1%CSV2_IN_SCHEMA_GENERATION_GROUP Advanced
+DEFAULT_MACRO CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1%CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1%CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1 Field Separation
+DEFAULT_MACRO CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1 No
+CSV2_1_SKIP_DUPLICATE_DELIMITERS "$(CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1)"
+GUI CHOICE CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1 Yes%No Skip Duplicate Delimiters:
+DEFAULT_MACRO CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1 <quote>
+CSV2_1_FIELD_QUALIFIER_CHARACTER "$(CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1)"
+GUI OPTIONAL STRING_ENCODED CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1 Field Qualifier Character:
+DEFAULT_MACRO CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1 <quote>
+CSV2_1_FIELD_QUALIFIER_ESCAPE_CHARACTER "$(CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1)"
+GUI OPTIONAL STRING_ENCODED CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1 Field Qualifier Escape Character:
+DEFAULT_MACRO CSV2_IN_FIELD_NAMES_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_NAMES_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1%CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1%CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_1 Field Names
+DEFAULT_MACRO CSV2_IN_TRIM_FIELD_NAME_QUALIFIERS_CSV2_1 Yes
+CSV2_1_TRIM_FIELD_NAME_QUALIFIERS "$(CSV2_IN_TRIM_FIELD_NAME_QUALIFIERS_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1 Yes
+CSV2_1_CASE_SENSITIVE_FIELD_NAMES "$(CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1)"
+GUI CHOICE CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1 Yes%No Case Sensitive Field Names:
+DEFAULT_MACRO CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1 No
+CSV2_1_ENFORCE_STRICT_SCHEMA "$(CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1)"
+GUI CHOICE CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1 Yes%No Enforce Strict Schema:
+DEFAULT_MACRO CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_1 Yes
+CSV2_1_TRIM_FIELD_NAME_WHITESPACE "$(CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_1)"
+GUI CHOICE CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_1 Yes%No Trim Whitespaces From Field Names:
+DEFAULT_MACRO CSV2_IN_FIELD_VALUES_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_VALUES_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1%CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_1 Field Values
+DEFAULT_MACRO CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_1 Null
+CSV2_1_READ_EMPTY_VALUES_AS "$(CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_1)"
+GUI CHOICE CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_1 Missing%Null Read Empty Values As:
+DEFAULT_MACRO CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1 Yes
+CSV2_1_TRIM_FIELD_VALUE_QUALIFIERS "$(CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1)"
+GUI CHOICE CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1 Yes%No Trim Field Qualifier Characters:
+DEFAULT_MACRO CSV2_IN_ENCODING_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_ENCODING_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_ENCODING_CSV2_1%CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1 Encoding
+DEFAULT_MACRO CSV2_IN_ENCODING_CSV2_1 windows-1252
+CSV2_1_ENCODING "$(CSV2_IN_ENCODING_CSV2_1)"
+GUI STRING_OR_ENCODING CSV2_IN_ENCODING_CSV2_1 fme-system%* Character Encoding:
+DEFAULT_MACRO CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1 No
+CSV2_1_PRESERVE_SOURCE_ENCODING "$(CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1)"
+GUI CHOICE CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1 Yes%No Preserve Source Encoding:
+DEFAULT_MACRO CSV2_IN_SKIPPED_LINES_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_SKIPPED_LINES_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_READ_SKIPPED_LINES_CSV2_1 Skipped Lines
+DEFAULT_MACRO CSV2_IN_READ_SKIPPED_LINES_CSV2_1 No
+CSV2_1_READ_SKIPPED_LINES "$(CSV2_IN_READ_SKIPPED_LINES_CSV2_1)"
+GUI CHOICE CSV2_IN_READ_SKIPPED_LINES_CSV2_1 Yes%No Read Skipped Lines:
+DEFAULT_MACRO CSV2_IN_SCAN_MAX_ROWS_CSV2_1 10000
+CSV2_1_SCAN_MAX_ROWS "$(CSV2_IN_SCAN_MAX_ROWS_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_SCAN_TYPES_CSV2_1 Yes
+CSV2_1_SCAN_TYPES "$(CSV2_IN_SCAN_TYPES_CSV2_1)"
+# ============================================================================
+# Determines whether numeric attributes should be interpreted as bounded or unbounded
+DEFAULT_MACRO CSV2_IN_TYPE_ATTRIBUTE_HANDLING_CSV2_1 STANDARD_TYPES
+CSV2_1_TYPE_ATTRIBUTE_HANDLING "$(CSV2_IN_TYPE_ATTRIBUTE_HANDLING_CSV2_1)"
+# ============================================================================
+# Determines whether string attributes should be interpreted as bounded or unbounded
+DEFAULT_MACRO CSV2_IN_STRING_TYPE_ATTRIBUTE_HANDLING_CSV2_1 EXPLICIT_WIDTH
+CSV2_1_STRING_TYPE_ATTRIBUTE_HANDLING "$(CSV2_IN_STRING_TYPE_ATTRIBUTE_HANDLING_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_DATE_INPUT_FORMAT_CSV2_1 FME
+CSV2_1_DATE_INPUT_FORMAT "$(CSV2_IN_DATE_INPUT_FORMAT_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_SCAN_ADDITIONAL_FIELDS_CSV2_1 No
+CSV2_1_SCAN_ADDITIONAL_FIELDS "$(CSV2_IN_SCAN_ADDITIONAL_FIELDS_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_EXPOSE_ATTRS_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED
+CSV2_1_EXPOSE_ATTRS_GROUP "$(CSV2_IN_EXPOSE_ATTRS_GROUP_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_CSV2_1 Yes
+CSV2_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(CSV2_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_CHUNK_SIZE_CSV2_1 100000
+CSV2_1_CHUNK_SIZE "$(CSV2_IN_CHUNK_SIZE_CSV2_1)"
+# ===========================================================================
+DEFAULT_MACRO CSV2_IN_NETWORK_AUTHENTICATION_CSV2_1 
+CSV2_1_NETWORK_AUTHENTICATION "$(CSV2_IN_NETWORK_AUTHENTICATION_CSV2_1)"
+GUI OPTIONAL AUTHENTICATOR CSV2_IN_NETWORK_AUTHENTICATION_CSV2_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO CSV2_IN_ATTRIBUTE_READING_CSV2_1 DEFLINE
+CSV2_1_ATTRIBUTE_READING "$(CSV2_IN_ATTRIBUTE_READING_CSV2_1)"
+# ============================================================================
+CSV2_1_GENERATE_FME_BUILD_NUM 21635
+CSV2_1_DATASET "$(SourceDataset_CSV2_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "POSTGRES_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER POSTGRES POSTGRES_1
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_POSTGRES_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER POSTGRES POSTGRES_1
+DEFAULT_MACRO DestDataset_POSTGRES_1 $(DestDataset_POSTGRES)
+GUI NAMED_DB_CONNECTION_ENCODED DestDataset_POSTGRES_1 FMT:POSTGRES Connection:
+DEFAULT_MACRO POSTGRES_OUT_STRICT_TEMPORAL_TYPE_HANDLING_POSTGRES_1 Yes
+POSTGRES_1_STRICT_TEMPORAL_TYPE_HANDLING "$(POSTGRES_OUT_STRICT_TEMPORAL_TYPE_HANDLING_POSTGRES_1)"
+DEFAULT_MACRO POSTGRES_OUT_FME_CONNECTION_GROUP_POSTGRES_1 
+GUI OPTIONAL DISCLOSUREGROUP POSTGRES_OUT_FME_CONNECTION_GROUP_POSTGRES_1 POSTGRES_OUT_NAMED_CONNECTION Database Connection
+DEFAULT_MACRO POSTGRES_OUT_ADVANCED_POSTGRES_1 
+GUI OPTIONAL DISCLOSUREGROUP POSTGRES_OUT_ADVANCED_POSTGRES_1 POSTGRES_OUT_BULK_COPY_POSTGRES_1%POSTGRES_OUT_START_TRANSACTION_POSTGRES_1%POSTGRES_OUT_TRANSACTION_INTERVAL_POSTGRES_1%POSTGRES_OUT_BEGIN_SQL_POSTGRES_1%POSTGRES_OUT_END_SQL_POSTGRES_1 Advanced
+DEFAULT_MACRO POSTGRES_OUT_BULK_COPY_POSTGRES_1 YES
+POSTGRES_1_BULK_COPY "$(POSTGRES_OUT_BULK_COPY_POSTGRES_1)"
+GUI CHOICE POSTGRES_OUT_BULK_COPY_POSTGRES_1 YES%NO Bulk Insert
+DEFAULT_MACRO POSTGRES_OUT_START_TRANSACTION_POSTGRES_1 0
+POSTGRES_1_START_TRANSACTION "$(POSTGRES_OUT_START_TRANSACTION_POSTGRES_1)"
+GUI TEXT POSTGRES_OUT_START_TRANSACTION_POSTGRES_1 Starting Feature:
+DEFAULT_MACRO POSTGRES_OUT_TRANSACTION_INTERVAL_POSTGRES_1 1000
+POSTGRES_1_TRANSACTION_INTERVAL "$(POSTGRES_OUT_TRANSACTION_INTERVAL_POSTGRES_1)"
+GUI TEXT POSTGRES_OUT_TRANSACTION_INTERVAL_POSTGRES_1 Features Per Transaction
+DEFAULT_MACRO POSTGRES_OUT_BEGIN_SQL_POSTGRES_1 
+POSTGRES_1_BEGIN_SQL "$(POSTGRES_OUT_BEGIN_SQL_POSTGRES_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG POSTGRES_OUT_BEGIN_SQL_POSTGRES_1 MODE,SQL;FORMAT,POSTGRES SQL To Run Before Write
+DEFAULT_MACRO POSTGRES_OUT_END_SQL_POSTGRES_1 
+POSTGRES_1_END_SQL "$(POSTGRES_OUT_END_SQL_POSTGRES_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG POSTGRES_OUT_END_SQL_POSTGRES_1 MODE,SQL;FORMAT,POSTGRES SQL To Run After Write
+DEFAULT_MACRO POSTGRES_OUT_COORDINATE_SYSTEM_GRANULARITY_POSTGRES_1 FEATURE
+POSTGRES_1_COORDINATE_SYSTEM_GRANULARITY "$(POSTGRES_OUT_COORDINATE_SYSTEM_GRANULARITY_POSTGRES_1)"
+# ============================================================================ 
+POSTGRES_1_GENERATE_FME_BUILD_NUM 20218
+POSTGRES_1_DATASET "$(DestDataset_POSTGRES_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)Besuchswerte_eine_Datei.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING windows-1252
+DEFAULT_MACRO DATASET_KEYWORD_CSV2_1 CSV2_1
+DEFAULT_MACRO DATASET_KEYWORD_POSTGRES_1 POSTGRES_1
+# -------------------------------------------------------------------------
+
+CSV2_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME Besuchswerte_eine_Datei
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_CSV2_1)   INPUT FEATURE_TYPE *    ROUTE CSV2 CSV2_1::CSV multi_reader_keyword,$(DATASET_KEYWORD_CSV2_1) TO FME_GENERIC ::CSV ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+CSV2_1_MERGE_DEF CSV2_1::CSV EXACT CSV DEFLINE fme_attribute_reading,defined,col0,uint32,col1,uint32,col2,uint32,col3,uint32,col4,varchar<openparen>11<closeparen>,col5,varchar<openparen>9<closeparen>,col6,varchar<openparen>9<closeparen>,col7,time,col8,int32,col9,int32,col10,uint32,col11,uint32
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "CSV_CSV2_1 Splitter"    INPUT FEATURE_TYPE CSV    OUTPUT FEATURE_TYPE CSV_CSV2_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+MACRO Ermittle_Betriebsnummer_DIRECTIVES READ_TIME_WITH_TIMEZONE Yes NAMED_CONNECTION lflgistest QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes CREATE_FEATURE_TABLES_FROM_DATA Yes SCHEMAS_FOR_TABLE_LISTING digimilch
+FACTORY_DEF {*} CreationFactory    FACTORY_NAME { Ermittle_Betriebsnummer_Creator }    OUTPUT { FEATURE_TYPE _____CREATED______ }
+FACTORY_DEF {*} QueryFactory    FACTORY_NAME { Ermittle_Betriebsnummer }    INPUT FEATURE_TYPE _____CREATED______    QUERY_SQL            { select<space>betrieb_id<space><lf>from<space><quote>digimilch<quote>.<quote>betrieb<quote><lf>where<space>betriebsnummer<space>=<space><apos>$(Betriebsnummer$encode)<apos><lf><lf> }    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     RESULT_ONLY    READER_TYPE          { POSTGRES   }    READER_DATASET       { "lflgistest" }    READER_PARAMS        { $(Ermittle_Betriebsnummer_DIRECTIVES) }    QUERYFCT_PROPAGATE_IDS_ON_SQL_EXECUTE YES    CONTINUE_ON_READER_ERROR YES    OUTPUT { RESULT FEATURE_TYPE Ermittle_Betriebsnummer_RESULT        @SupplyAttributes(fme_feature_type,Ermittle_Betriebsnummer)         }    OUTPUT { READER_ERROR FEATURE_TYPE Ermittle_Betriebsnummer_<REJECTED>         }
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "Ermittle_Betriebsnummer_RESULT Brancher -1 38"   INPUT FEATURE_TYPE Ermittle_Betriebsnummer_RESULT   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME Ermittle_Betriebsnummer_<Rejected> INPUT FEATURE_TYPE Ermittle_Betriebsnummer_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, Ermittle_Betriebsnummer<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+INCLUDE [if { {ATTRIBUTES} == {ATTRIBUTES} } {                puts "MACRO FeatureMerger_REFERENCE_INFO ATTRIBUTES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {POLYGONS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_POLYS";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {AGGREGATES}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} && {<Unused>} == {LINESFROMPOINTS}} {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_LINES_FROM_POINTS";             }          elseif { {ATTRIBUTES} == {GEOM_BUILD} } {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_BUILD_AGGREGATES";             }          elseif { {ATTRIBUTES} == {GEOM_AND_ATTRS} } {                puts "MACRO FeatureMerger_REFERENCE_INFO GEOM_AND_ATTR_BUILD_AGGREGATES";             }          else {}; ]
+FACTORY_DEF {*} ReferenceFactory    FACTORY_NAME { FeatureMerger }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT REFERENCER FEATURE_TYPE CSV_CSV2_1    INPUT REFERENCEE FEATURE_TYPE Ermittle_Betriebsnummer_RESULT    REFERENCE_INFO { $(FeatureMerger_REFERENCE_INFO) }    REFERENCE_TABLE { 1 1 AUTO }    ATTR_ACCUM_MODE { "HANDLE_CONFLICT" }    ATTR_CONFLICT_RES { "REQUESTOR_IF_CONFLICT" }    IGNORE_NULLS { "No" }    HANDLE_NULL_MISSING_KEYS_LIKE_FME2013 { No }    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE { <Unused> }    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES { NO }    REFERENCEES_FIRST { No }    REJECT_INVALID_GEOM YES    CLEANING_TOLERANCE { <Unused> }    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    COMPARE_WHITESPACE Yes    OUTPUT { COMPLETE FEATURE_TYPE FeatureMerger_MERGED         }    OUTPUT { REJECTED FEATURE_TYPE FeatureMerger_<REJECTED>         }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME FeatureMerger_<Rejected> INPUT FEATURE_TYPE FeatureMerger_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, FeatureMerger<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { Spalten_benennen }    INPUT  FEATURE_TYPE FeatureMerger_MERGED    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "col0" "stallnummer" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "col1" "lom" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "col2" "trognummer" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "col3" "lfdNr" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "col4" "datum" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "col5" "Beginnzeit" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "col6" "Endezeit" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "col7" "gewicht" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "col8" "Beginngewicht<space>Trog" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "col9" "Endegewicht<space>Trog" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "" "jjjjmmtt" "<at>Substring<openparen><at>Value<openparen>datum<closeparen><comma>6<comma>4<closeparen><at>Substring<openparen><at>Value<openparen>datum<closeparen><comma>3<comma>2<closeparen><at>Substring<openparen><at>Value<openparen>datum<closeparen><comma>0<comma>2<closeparen>" "SET_TO" }      ATTR_ACTION { "" "lom_mit_praefix" "DE0<at>Value<openparen>lom<closeparen>" "SET_TO" }    OUTPUT { OUTPUT FEATURE_TYPE Spalten_benennen_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg_ }    INPUT  FEATURE_TYPE Spalten_benennen_OUTPUT    OUTPUT FEATURE_TYPE LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg__TESTFILTERINPUTLINE_0
+FACTORY_DEF {*} TestFactory FACTORY_NAME LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg__Condition_1 INPUT FEATURE_TYPE LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg__TESTFILTERINPUTLINE_0 TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>lom<closeparen>,LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg_) = 0815 ENCODED } BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" FEATURE_TABLE_SHIM_SUPPORT Yes PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT PASSED FEATURE_TYPE LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg__dummy<space> OUTPUT FAILED FEATURE_TYPE LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg__TESTFILTERINPUTLINE_1
+FACTORY_DEF {*} TestFactory FACTORY_NAME LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg__Condition_2 INPUT FEATURE_TYPE LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg__TESTFILTERINPUTLINE_1 TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>lom<closeparen>,LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg_) > 0 ENCODED } BOOLEAN_OPERATOR AND COMPOSITE_TEST_EXPR "1" FEATURE_TABLE_SHIM_SUPPORT Yes PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT PASSED FEATURE_TYPE LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg__<at>Value<openparen>lom<closeparen><space><gt><space>0 OUTPUT FAILED FEATURE_TYPE LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg__TESTFILTERINPUTLINE_2
+FACTORY_DEF * TeeFactory FACTORY_NAME LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg__LOM<space>nicht<space>verf<u00fc>gbar INPUT FEATURE_TYPE LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg__TESTFILTERINPUTLINE_2 OUTPUT FEATURE_TYPE LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg__LOM<space>nicht<space>verf<u00fc>gbar
+FACTORY_DEF * TeeFactory   FACTORY_NAME "LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg_ dummy<space> Transformer Output Nuker"   INPUT FEATURE_TYPE LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg__dummy<space>
+# -------------------------------------------------------------------------
+MACRO LOM__x_Tier.LOM_DIRECTIVES NAMED_CONNECTION lflgistest READ_TIME_WITH_TIMEZONE Yes CREATE_FEATURE_TABLES_FROM_DATA Yes QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes
+INCLUDE [    if { {MATCH_ALL} == {MATCH_ALL} } {       puts {MACRO LOM__x_Tier.LOM_ONE_FEATURE_PER_JOIN NO};    } else {       puts {MACRO LOM__x_Tier.LOM_ONE_FEATURE_PER_JOIN YES};    } ]
+FACTORY_DEF {*} JoinFactory    FACTORY_NAME { LOM__x_Tier.LOM }    INPUT  FEATURE_TYPE LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg__<at>Value<openparen>lom<closeparen><space><gt><space>0    READER_TYPE             { POSTGRES }    READER_DATASET          { "lflgistest" }    TABLE_ID                { "digimilch.view_tier" }    READER_PARAMS           { $(LOM__x_Tier.LOM_DIRECTIVES) }    JOIN_KEYS               { lom_mit_praefix<space>lom }    ADDED_FIELDS            { abgang<space>tier_betrieb_id<space>zugang }    COMBINE_ATTRIBUTES      { PREFER_ORIGINAL }    MATCH_RULE              { MATCH_ALL }    CACHE_SIZE              { 5000 }    PREFETCH_EXHAUSTIVE     { Yes }    ONE_FEATURE_PER_JOIN    { $(LOM__x_Tier.LOM_ONE_FEATURE_PER_JOIN) }    JOIN_ID                 { "LOM__x_Tier.LOM" }    REJECTION_ENABLED       YES    UNJOINED_ENABLED        YES    OUTPUT { JOINED FEATURE_TYPE LOM__x_Tier.LOM_JOINED       }    OUTPUT { REJECTED FEATURE_TYPE LOM__x_Tier.LOM_<REJECTED>       }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME LOM__x_Tier.LOM_<Rejected> INPUT FEATURE_TYPE LOM__x_Tier.LOM_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, LOM__x_Tier.LOM<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+MACRO stallnr_x_Tierbetrieb.stallnr_2_DIRECTIVES NAMED_CONNECTION lflgistest READ_TIME_WITH_TIMEZONE Yes QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS Yes CREATE_FEATURE_TABLES_FROM_DATA Yes
+INCLUDE [    if { {MATCH_ALL} == {MATCH_ALL} } {       puts {MACRO stallnr_x_Tierbetrieb.stallnr_2_ONE_FEATURE_PER_JOIN NO};    } else {       puts {MACRO stallnr_x_Tierbetrieb.stallnr_2_ONE_FEATURE_PER_JOIN YES};    } ]
+FACTORY_DEF {*} JoinFactory    FACTORY_NAME { stallnr_x_Tierbetrieb.stallnr_2 }    INPUT  FEATURE_TYPE LOM_Prüfung__alle_0_und_Dummy_Werte_erkennen_und_weg__LOM<space>nicht<space>verf<u00fc>gbar    READER_TYPE             { POSTGRES }    READER_DATASET          { "lflgistest" }    TABLE_ID                { "digimilch.tier_betrieb" }    READER_PARAMS           { $(stallnr_x_Tierbetrieb.stallnr_2_DIRECTIVES) }    JOIN_KEYS               { stallnummer<space>stallnummer<space>betrieb_id<space>betrieb_id }    ADDED_FIELDS            { abgang<space>tier_betrieb_id<space>zugang }    COMBINE_ATTRIBUTES      { PREFER_ORIGINAL }    MATCH_RULE              { MATCH_ALL }    CACHE_SIZE              { 5000 }    PREFETCH_EXHAUSTIVE     { Yes }    ONE_FEATURE_PER_JOIN    { $(stallnr_x_Tierbetrieb.stallnr_2_ONE_FEATURE_PER_JOIN) }    JOIN_ID                 { "stallnr_x_Tierbetrieb.stallnr_2" }    REJECTION_ENABLED       YES    UNJOINED_ENABLED        YES    OUTPUT { JOINED FEATURE_TYPE stallnr_x_Tierbetrieb.stallnr_2_JOINED       }    OUTPUT { REJECTED FEATURE_TYPE stallnr_x_Tierbetrieb.stallnr_2_<REJECTED>       }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME stallnr_x_Tierbetrieb.stallnr_2_<Rejected> INPUT FEATURE_TYPE stallnr_x_Tierbetrieb.stallnr_2_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, stallnr_x_Tierbetrieb.stallnr_2<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester }    INPUT  FEATURE_TYPE stallnr_x_Tierbetrieb.stallnr_2_JOINED    INPUT  FEATURE_TYPE LOM__x_Tier.LOM_JOINED    TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>jjjjmmtt<closeparen>,Tester)" >= "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>zugang<closeparen>,Tester)" ENCODED } TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>jjjjmmtt<closeparen>,Tester)" <= "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>abgang<closeparen>,Tester)" ENCODED } TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>jjjjmmtt<closeparen>,Tester)" >= "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>zugang<closeparen>,Tester)" ENCODED } TEST { abgang ATTRIBUTE_VALUE_NULL "" ENCODED } TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>jjjjmmtt<closeparen>,Tester)" <= "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>abgang<closeparen>,Tester)" ENCODED } TEST { zugang ATTRIBUTE_VALUE_NULL "" ENCODED }    BOOLEAN_OPERATOR { COMPOSITE }    COMPOSITE_TEST_EXPR { "( 1 AND 2 ) OR ( 3 AND 4 ) OR  ( 5 AND 6 )" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { PASSED FEATURE_TYPE Tester_PASSED         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeRenamer }    INPUT  FEATURE_TYPE Tester_PASSED 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "trognummer" "standnr" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "lfdNr" "besuchsnr" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "jjjjmmtt" "datum" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "Beginnzeit" "beginn" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "Endezeit" "ende" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "gewicht" "verzehrsmenge" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "Beginngewicht<space>Trog" "anfangsgewicht" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "Endegewicht<space>Trog" "endgewicht" "RENAME_SET_DEFAULT" "" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeRenamer_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} DuplicateRemoverFactory    FACTORY_NAME { DuplicateFilter }    COMMAND_PARM_EVALUATION SINGLE_PASS    SUPPORTS_FEATURE_TABLES    INPUT  FEATURE_TYPE AttributeRenamer_OUTPUT    KEY_ATTRIBUTES { beginn datum tier_betrieb_id }    INPUT_IS_ORDERED { NO }    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { UNIQUE FEATURE_TYPE DuplicateFilter_UNIQUE         }
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC DuplicateFilter_UNIQUE TO NULL __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,__wb_out_feat_type__,__nuke_me__ GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
